@@ -1,0 +1,103 @@
+/* GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* TOP HEADER */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 18px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.top-item {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.top-label {
+  font-size: 12px;
+  color: #444;
+}
+
+.top-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 1px solid #25d366;
+  color: #25d366;
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.whatsapp-btn:hover {
+  background: #25d366;
+  color: #fff;
+}
+
+/* BOTTOM HEADER (Navbar) */
+.bottom-header {
+  background: #1f2430; /* dark like the screenshot */
+  padding: 12px 18px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+/* Hover + Active look */
+.nav-link:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}

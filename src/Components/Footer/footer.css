@@ -1,0 +1,28 @@
+.footer {
+  position:absolute;
+  bottom:0;
+  background-color: black;
+  padding: 20px;
+  Width:100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+
+  font-size: 14px;
+  color: white;
+}
+
+.footer-left img {
+  height: 60px;
+  width: auto;
+}
+
+.footer-center p,
+.footer-right p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+
