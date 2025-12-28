@@ -5,6 +5,10 @@ const About = () => {
 const state=useSelector((state)=>state.counter);
 const dispatch=useDispatch();
   return <>
+
+
+
+  
   <p>{state.value}</p>
   <button onClick={()=>dispatch(increment())}  >Add</button>
   <button onClick={()=>dispatch(decrement())} disabled={state.value==0}>Sub</button>
